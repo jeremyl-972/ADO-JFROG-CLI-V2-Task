@@ -1,1 +1,12 @@
-#
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+
+- task: JfrogCliV2@1
+  inputs:
+    jfrogPlatformConnection: 'jfrog'
+    command: 'jf rbc '
